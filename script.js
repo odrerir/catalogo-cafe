@@ -12,7 +12,7 @@ fetch("dados.js")
         ${cafe.destaque ? '<div class="card-badge">Destaque</div>' : ""}
         <div class="card-roast ${cafe.torraClass}">${cafe.torra}</div>
         <div class="card-body">
-          <div class="card-origin">${cafe.graoFino}</div>
+          <div class="card-origin">${cafe.origem}</div>
           <h3 class="card-name">${cafe.nome}</h3>
           <p class="card-notes">
             <span class="notes-label">Notas</span>
