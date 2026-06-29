@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Origem — Cafés de Especialidade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">GRÃO FINO</span>
+    <ul class="nav-links">
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-eyebrow">Torrefação Artesanal · Desde 2018</div>
+    <h1 class="hero-title">Do grão<br /><em>à xícara.</em></h1>
+    <p class="hero-sub">
+      Selecionamos os melhores microlotes do Brasil e do mundo, torrados
+      em pequenos lotes para preservar cada nuance do terroir.
+    </p>
+    <a href="#catalogo" class="hero-cta">Ver catálogo</a>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">12</span>
+        <span class="stat-label">origens</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">34</span>
+        <span class="stat-label">microlotes</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">arábica</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- CATALOG -->
+  <main id="catalogo" class="catalog-section">
+    <div class="section-header">
+      <span class="section-eyebrow">Catálogo</span>
+      <h2 class="section-title">Nossos cafés</h2>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="brasil">Brasil</button>
+      <button class="filter-btn" data-filter="africa">África</button>
+      <button class="filter-btn" data-filter="asia">Ásia</button>
+    </div>
+
+    <div class="grid" id="grid">
+
+      <!-- Card 1 -->
+      <article class="card" data-region="brasil">
+        <div class="card-roast roast-light">Torra Clara</div>
+        <div class="card-body">
+          <div class="card-origin">Chapada Diamantina · BA</div>
+          <h3 class="card-name">Serra do Sincorá</h3>
+          <p class="card-notes">
+            <span class="notes-label">Notas</span>
+            Jasmim · Pêssego branco · Mel de laranjeira
+          </p>
+          <div class="card-meta">
+            <span class="meta-score">92 pts</span>
+            <span class="meta-process">Natural</span>
+          </div>
+          <div class="card-price-row">
+            <span class="card-price">R$ 64<small>/250g</small></span>
+            <button class="card-btn">Adicionar</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card card-featured" data-region="africa">
+        <div class="card-badge">Destaque</div>
+        <div class="card-roast roast-medium">Torra Média</div>
+        <div class="card-body">
+          <div class="card-origin">Yirgacheffe · Etiópia</div>
+          <h3 class="card-name">Kochere Washed</h3>
+          <p class="card-notes">
+            <span class="notes-label">Notas</span>
+            Bergamota · Groselha · Chocolate branco
+          </p>
+          <div class="card-meta">
+            <span class="meta-score">94 pts</span>
+            <span class="meta-process">Lavado</span>
+          </div>
+          <div class="card-price-row">
+            <span class="card-price">R$ 89<small>/250g</small></span>
+            <button class="card-btn">Adicionar</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card" data-region="brasil">
+        <div class="card-roast roast-dark">Torra Escura</div>
+        <div class="card-body">
+          <div class="card-origin">Mantiqueira · MG</div>
+          <h3 class="card-name">Pedra Negra</h3>
+          <p class="card-notes">
+            <span class="notes-label">Notas</span>
+            Cacau · Caramelo salgado · Amêndoa
+          </p>
+          <div class="card-meta">
+            <span class="meta-score">90 pts</span>
+            <span class="meta-process">Honey</span>
+          </div>
+          <div class="card-price-row">
+            <span class="card-price">R$ 52<small>/250g</small></span>
+            <button class="card-btn">Adicionar</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card" data-region="asia">
+        <div class="card-roast roast-light">Torra Clara</div>
+        <div class="card-body">
+          <div class="card-origin">Sumatra · Indonésia</div>
+          <h3 class="card-name">Mandheling Reserve</h3>
+          <p class="card-notes">
+            <span class="notes-label">Notas</span>
+            Tabaco · Especiarias · Cedro
+          </p>
+          <div class="card-meta">
+            <span class="meta-score">91 pts</span>
+            <span class="meta-process">Giling Basah</span>
+          </div>
+          <div class="card-price-row">
+            <span class="card-price">R$ 78<small>/250g</small></span>
+            <button class="card-btn">Adicionar</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card" data-region="africa">
+        <div class="card-roast roast-medium">Torra Média</div>
+        <div class="card-body">
+          <div class="card-origin">Nyeri · Quênia</div>
+          <h3 class="card-name">AA Kirinyaga</h3>
+          <p class="card-notes">
+            <span class="notes-label">Notas</span>
+            Amora · Tomate seco · Hibisco
+          </p>
+          <div class="card-meta">
+            <span class="meta-score">93 pts</span>
+            <span class="meta-process">Lavado</span>
+          </div>
+          <div class="card-price-row">
+            <span class="card-price">R$ 96<small>/250g</small></span>
+            <button class="card-btn">Adicionar</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="card" data-region="brasil">
+        <div class="card-roast roast-light">Torra Clara</div>
+        <div class="card-body">
+          <div class="card-origin">Sul de Minas · MG</div>
+          <h3 class="card-name">Fazenda Rainha</h3>
+          <p class="card-notes">
+            <span class="notes-label">Notas</span>
+            Nectarina · Baunilha · Chá branco
+          </p>
+          <div class="card-meta">
+            <span class="meta-score">90 pts</span>
+            <span class="meta-process">Natural</span>
+          </div>
+          <div class="card-price-row">
+            <span class="card-price">R$ 48<small>/250g</small></span>
+            <button class="card-btn">Adicionar</button>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /grid -->
+  </main>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="about-section">
+    <div class="about-inner">
+      <div class="about-text">
+        <span class="section-eyebrow">Sobre nós</span>
+        <h2 class="about-title">Café como expressão<br /><em>de um lugar.</em></h2>
+        <p>
+          A Origem nasceu da crença de que cada xícara carrega a história
+          do solo, do clima e das mãos que cultivaram o grão. Trabalhamos
+          diretamente com produtores de microlotes em relações de longo prazo
+          que valorizam tanto a qualidade quanto a sustentabilidade.
+        </p>
+        <p>
+          Nossa torra acontece toda semana, em pequenas levas, garantindo que
+          o café chegue até você com frescor e complexidade íntegros.
+        </p>
+      </div>
+      <div class="about-aside">
+        <div class="about-card">
+          <span class="about-card-num">01</span>
+          <h4>Seleção</h4>
+          <p>Visitamos as fazendas e curvamos cada lote antes de comprar.</p>
+        </div>
+        <div class="about-card">
+          <span class="about-card-num">02</span>
+          <h4>Torra</h4>
+          <p>Pequenos lotes semanais para máxima frescura.</p>
+        </div>
+        <div class="about-card">
+          <span class="about-card-num">03</span>
+          <h4>Entrega</h4>
+          <p>Embalado e despachado em até 24h após a torra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / CONTATO -->
+  <footer id="contato" class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">GRÃO FINO</span>
+        <p>Torrefação artesanal de cafés especiais.<br />São Paulo · Brasil</p>
+      </div>
+      <div class="footer-links">
+        <h5>Catálogo</h5>
+        <a href="#catalogo">Brasil</a>
+        <a href="#catalogo">África</a>
+        <a href="#catalogo">Ásia</a>
+      </div>
+      <div class="footer-links">
+        <h5>Contato</h5>
+        <a href="#">contato@origem.cafe</a>
+        <a href="#">@origem.cafe</a>
+        <a href="#">(11) 94000-0000</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
