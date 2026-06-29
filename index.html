@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Origem — Cafés de Especialidade</title>
+  <title>GRÃO FINO — Cafés de Especialidade</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -62,146 +62,28 @@
       <button class="filter-btn" data-filter="asia">Ásia</button>
     </div>
 
-    <div class="grid" id="grid">
-
-      <!-- Card 1 -->
-      <article class="card" data-region="brasil">
-        <div class="card-roast roast-light">Torra Clara</div>
-        <div class="card-body">
-          <div class="card-origin">Chapada Diamantina · BA</div>
-          <h3 class="card-name">Serra do Sincorá</h3>
-          <p class="card-notes">
-            <span class="notes-label">Notas</span>
-            Jasmim · Pêssego branco · Mel de laranjeira
-          </p>
-          <div class="card-meta">
-            <span class="meta-score">92 pts</span>
-            <span class="meta-process">Natural</span>
-          </div>
-          <div class="card-price-row">
-            <span class="card-price">R$ 64<small>/250g</small></span>
-            <button class="card-btn">Adicionar</button>
-          </div>
-        </div>
-      </article>
-
-      <!-- Card 2 -->
-      <article class="card card-featured" data-region="africa">
-        <div class="card-badge">Destaque</div>
-        <div class="card-roast roast-medium">Torra Média</div>
-        <div class="card-body">
-          <div class="card-origin">Yirgacheffe · Etiópia</div>
-          <h3 class="card-name">Kochere Washed</h3>
-          <p class="card-notes">
-            <span class="notes-label">Notas</span>
-            Bergamota · Groselha · Chocolate branco
-          </p>
-          <div class="card-meta">
-            <span class="meta-score">94 pts</span>
-            <span class="meta-process">Lavado</span>
-          </div>
-          <div class="card-price-row">
-            <span class="card-price">R$ 89<small>/250g</small></span>
-            <button class="card-btn">Adicionar</button>
-          </div>
-        </div>
-      </article>
-
-      <!-- Card 3 -->
-      <article class="card" data-region="brasil">
-        <div class="card-roast roast-dark">Torra Escura</div>
-        <div class="card-body">
-          <div class="card-origin">Mantiqueira · MG</div>
-          <h3 class="card-name">Pedra Negra</h3>
-          <p class="card-notes">
-            <span class="notes-label">Notas</span>
-            Cacau · Caramelo salgado · Amêndoa
-          </p>
-          <div class="card-meta">
-            <span class="meta-score">90 pts</span>
-            <span class="meta-process">Honey</span>
-          </div>
-          <div class="card-price-row">
-            <span class="card-price">R$ 52<small>/250g</small></span>
-            <button class="card-btn">Adicionar</button>
-          </div>
-        </div>
-      </article>
-
-      <!-- Card 4 -->
-      <article class="card" data-region="asia">
-        <div class="card-roast roast-light">Torra Clara</div>
-        <div class="card-body">
-          <div class="card-origin">Sumatra · Indonésia</div>
-          <h3 class="card-name">Mandheling Reserve</h3>
-          <p class="card-notes">
-            <span class="notes-label">Notas</span>
-            Tabaco · Especiarias · Cedro
-          </p>
-          <div class="card-meta">
-            <span class="meta-score">91 pts</span>
-            <span class="meta-process">Giling Basah</span>
-          </div>
-          <div class="card-price-row">
-            <span class="card-price">R$ 78<small>/250g</small></span>
-            <button class="card-btn">Adicionar</button>
-          </div>
-        </div>
-      </article>
-
-      <!-- Card 5 -->
-      <article class="card" data-region="africa">
-        <div class="card-roast roast-medium">Torra Média</div>
-        <div class="card-body">
-          <div class="card-origin">Nyeri · Quênia</div>
-          <h3 class="card-name">AA Kirinyaga</h3>
-          <p class="card-notes">
-            <span class="notes-label">Notas</span>
-            Amora · Tomate seco · Hibisco
-          </p>
-          <div class="card-meta">
-            <span class="meta-score">93 pts</span>
-            <span class="meta-process">Lavado</span>
-          </div>
-          <div class="card-price-row">
-            <span class="card-price">R$ 96<small>/250g</small></span>
-            <button class="card-btn">Adicionar</button>
-          </div>
-        </div>
-      </article>
-
-      <!-- Card 6 -->
-      <article class="card" data-region="brasil">
-        <div class="card-roast roast-light">Torra Clara</div>
-        <div class="card-body">
-          <div class="card-origin">Sul de Minas · MG</div>
-          <h3 class="card-name">Fazenda Rainha</h3>
-          <p class="card-notes">
-            <span class="notes-label">Notas</span>
-            Nectarina · Baunilha · Chá branco
-          </p>
-          <div class="card-meta">
-            <span class="meta-score">90 pts</span>
-            <span class="meta-process">Natural</span>
-          </div>
-          <div class="card-price-row">
-            <span class="card-price">R$ 48<small>/250g</small></span>
-            <button class="card-btn">Adicionar</button>
-          </div>
-        </div>
-      </article>
-
-    </div><!-- /grid -->
+    <!-- Grid Cards -->
+    <div class="grid" id="grid"></div>
   </main>
 
-  <!-- SOBRE -->
+  <!-- About -->
   <section id="sobre" class="about-section">
     <div class="about-inner">
       <div class="about-text">
         <span class="section-eyebrow">Sobre nós</span>
         <h2 class="about-title">Café como expressão<br /><em>de um lugar.</em></h2>
         <p>
-          A Origem nasceu da crença de que cada xícara carrega a história
+          A FROM debian:stable
+
+RUN apt-get update && \
+    apt-get install -y nginx && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY index.html /var/www/html/index.html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"] nasceu da crença de que cada xícara carrega a história
           do solo, do clima e das mãos que cultivaram o grão. Trabalhamos
           diretamente com produtores de microlotes em relações de longo prazo
           que valorizam tanto a qualidade quanto a sustentabilidade.
@@ -246,8 +128,8 @@
       </div>
       <div class="footer-links">
         <h5>Contato</h5>
-        <a href="#">contato@origem.cafe</a>
-        <a href="#">@origem.cafe</a>
+        <a href="#">contato@graofino.cafe</a>
+        <a href="#">@graofino.cafe</a>
         <a href="#">(11) 94000-0000</a>
       </div>
     </div>

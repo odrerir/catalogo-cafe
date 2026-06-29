@@ -1,5 +1,14 @@
-FROM nginx:alpine
+FROM debian:stable
 
-COPY index.html /usr/share/nginx/html/index.html
-COPY style.css  /usr/share/nginx/html/style.css
-COPY script.js  /usr/share/nginx/html/script.js
+RUN apt-get update && \
+    apt-get install -y nginx && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY index.html /var/www/html/index.html
+COPY style.css  /var/www/html/style.css
+COPY script.js  /var/www/html/script.js
+COPY dados.js /var/www/html/dados.js
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
